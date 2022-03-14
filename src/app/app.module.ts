@@ -8,6 +8,9 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { CropListComponent } from './crop-list/crop-list.component';
 import { AlertListComponent } from './alert-list/alert-list.component';
 import { RecordListComponent } from './record-list/record-list.component';
+import { AddCropComponent } from './add-crop/add-crop.component';
+import { CropDetailComponent } from './crop-detail/crop-detail.component';
+import { AddRecordComponent } from './add-record/add-record.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { RecordListComponent } from './record-list/record-list.component';
     AboutmeComponent,
     CropListComponent,
     AlertListComponent,
-    RecordListComponent
+    RecordListComponent,
+    AddCropComponent,
+    CropDetailComponent,
+    AddRecordComponent
   ],
   imports: [
     BrowserModule,
