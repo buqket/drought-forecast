@@ -1,0 +1,41 @@
+<div class="container">
+
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ชื่อแปลง</th>
+                <th scope="col">ชนิดพืช</th>
+                <th scope="col">แจ้งเตือน</th>
+                <th scope="col">วันที่แจ้งเตือน</th>
+                <th scope="col">วันที่คาดการณ์</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let alert of Alerts; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{alert.parcel_name}}</td>
+                <td>{{alert.plant_name}}</td>
+                <td>{{alert.activity_id}}</td>
+                <td>{{alert.alert_date}}</td>
+                <td>{{alert.alert_at}}</td>
+                <!-- <td class="text-center">
+                    <button type="button" class="btn btn-link">ข้อมูล</button>
+                    <button type="button" class="btn btn-link">บันทึก</button>
+                    <button type="button" class="btn btn-link">แก้ไข</button>
+                    <button type="button" class="btn btn-link">ลบ</button>
+                </td> -->
+                <!-- <button>ข้อมูลแปลง</button>
+                <button>บันทึก</button>
+
+                <button>ลบแปลง</button> -->
+
+
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+</div>

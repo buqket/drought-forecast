@@ -1,0 +1,42 @@
+<div class="container">
+
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ชื่อแปลง</th>
+                <th scope="col">ชนิดพืช</th>
+                <th scope="col">วันที่เพาะปลูก</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let crop of Crops; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{crop.parcel_name}}</td>
+                <td>{{crop.plant_name}}</td>
+                <td>{{crop.plant_at}}</td>
+                <td><a routerLink="/setting">ข้อมูล</a></td>
+                <td><a routerLink="/setting">บันทึก</a></td>
+                <td><a routerLink="/setting">แก้ไข</a></td>
+                <td><a routerLink="/setting">ลบ</a></td>
+                <!--<td>
+                     <button type="button" class="btn btn-primary">ข้อมูล</button>
+                    <button type="button" class="btn btn-primary">บันทึก</button>
+                    <button type="button" class="btn btn-primary">แก้ไข</button>
+                    <button type="button" class="btn btn-primary">ลบ</button>
+                  
+                </td> -->
+                <!-- <button>ข้อมูลแปลง</button>
+                <button>บันทึก</button>
+
+                <button>ลบแปลง</button> -->
+
+
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+</div>
